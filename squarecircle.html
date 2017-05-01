@@ -1,0 +1,25 @@
+<html>
+<head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+<script>
+function draw() {
+      var sketch = document.getElementById('sketch');
+      var context = sketch.getContext("2d");
+      //Draw stuff goes here!
+
+      //COLOR - BEFORE THE SHAPE
+      context.fillStyle = "#0000ff"
+
+context.fillRect(50, 50, 100, 100);
+
+//COLOR - BEFORE THE SHAPE
+context.fillStyle = "#00ff00"
+//CIRCLE - x, y, radius
+context.beginPath();
+context.arc(250, 100, 50, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+</script>
+</body>
