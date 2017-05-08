@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+function draw() {
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+//COLOR - BEFORE THE SHAPE
+
+context.fillStyle = "#ff0000"
+context.beginPath();
+context.arc(100, 100, 100, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+
+context.fillStyle = "#AF1414"
+context.beginPath();
+context.arc(100, 100, 75, 50, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#821515"
+//CIRCLE - x, y, radius
+context.beginPath();
+context.arc(100, 100, 50, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+
+
+context.fillStyle = "#4E0606"
+//CIRCLE - x, y, radius
+context.beginPath();
+context.arc(100, 100, 40, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#4F1010"
+//CIRCLE - x, y, radius
+context.beginPath();
+context.arc(100, 100, 30, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+context.fillStyle = "#953D3D"
+//CIRCLE - x, y, radius
+context.beginPath();
+context.arc(100, 100, 0, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+context.fillStyle = "#000000"
+context.beginPath();
+context.arc(100, 150, 0, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#3F1717"
+context.beginPath();
+context.arc(100, 100, 30, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#000FFF"
+context.beginPath();
+context.arc(350, 100, 100, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#151FC1"
+context.beginPath();
+context.arc(350, 100, 75, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#252B8A"
+context.beginPath();
+context.arc(350, 100, 50, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#232767"
+context.beginPath();
+context.arc(350, 100, 30, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+context.fillStyle = "#1E214D"
+context.beginPath();
+context.arc(350, 100, 10, 75, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+</script>
+</body>
+</html>
